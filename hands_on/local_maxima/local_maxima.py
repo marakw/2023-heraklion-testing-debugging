@@ -7,4 +7,6 @@ def find_maxima(x):
     Output:
     idx -- list of indices of the local maxima in x
     """
-    return []
+    
+    return [i for i, y in enumerate(x) if x[i-1]<=y and x[i+1]<=y]
+
